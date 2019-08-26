@@ -59,18 +59,41 @@ public class ArregloDinamico implements IArregloDinamico {
 
 		public String darElemento(int i) {
 			// TODO implementar
+			for(int j = 0; j < tamanoAct; j++)
+			{
+				if(j == i)
+				{
+					return elementos[j];
+				}
+			}
 			return null;
 		}
 
 		public String buscar(String dato) {
 			// TODO implementar
 			// Recomendacion: Usar el criterio de comparacion natural (metodo compareTo()) definido en Strings.
+			
+			for(int i = 0; i < tamanoAct; i++)
+			{
+				if(dato.equals(elementos[i]))
+				{
+					return elementos[i];
+				}
+			}
 			return null;
 		}
 
 		public String eliminar(String dato) {
 			// TODO implementar
 			// Recomendacion: Usar el criterio de comparacion natural (metodo compareTo()) definido en Strings.
+			
+			for(int i = 0; i < tamanoAct; i++)
+			{
+				if(dato.equals(elementos[i]))
+				{
+					return elementos[i];
+				}
+			}
 			return null;
 		}
 
