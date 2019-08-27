@@ -81,7 +81,11 @@ public class MVCModelo {
 		try {
 			reader = new CSVReader(new FileReader("./data/bogota-cadastral-2018-1-All-HourlyAggregate.csv"));
 			reader.close();
-			String[] nextline;
+			String[] nextline = reader.readNext();
+			for(String[] nextline: reader)
+			{
+				int inicioID = Integer.parseInt(nextline[0]);
+			}
 			while((nextline = reader.readNext()) != null)
 			{
 				if(nextline != null)
