@@ -6,6 +6,7 @@ import model.logic.MVCModelo;
 import view.MVCView;
 
 public class Controller {
+	
 
 	/* Instancia del Modelo*/
 	private MVCModelo modelo;
@@ -25,6 +26,8 @@ public class Controller {
 		
 	public void run() 
 	{
+		modelo.CSVreader();
+		
 		Scanner lector = new Scanner(System.in);
 		boolean fin = false;
 		String dato = "";
